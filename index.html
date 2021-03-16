@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Issuance</title>
+    <title>The kero's blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,9 +39,9 @@
           async function fetchIssues() {
             if (!issues) {
               const { url, ...options } = endpoint("GET /repos/:owner/:repo/issues", {
-                owner: "mateogianolio",
-                repo: "issuance",
-                auth: '<TOKEN>'
+                owner: "Kerollmops",
+                repo: "blog",
+                auth: 'd79a337d232e0b9cb86e615990126c71bfffc8c5'
               });
               const res = await fetch(url, options);
               setIssues(await res.json());
@@ -58,7 +58,7 @@
         return html`
           <div className="posts">
             ${(issues || [])
-              .filter(({ user }) => user.login === 'mateogianolio')
+              .filter(({ user }) => user.login === 'Kerollmops')
               .filter(({ number }) => !search || Number(search.slice(1)) === number)
               .map(({
                 number,
