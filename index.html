@@ -2,8 +2,9 @@
 
 <html>
   <head>
-    <title>The kero's blog</title>
+    <title>kero's blog</title>
 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="css/structure.css">
@@ -110,6 +111,15 @@
                     className="body"
                     dangerouslySetInnerHTML="${{ __html: marked(body).replace(/<pre>/g, '<pre class="prettyprint">')}}"
                   />
+
+                  <script src="https://utteranc.es/client.js"
+                          repo="Kerollmops/kerollmops.github.io"
+                          issue-number="${number}"
+                          theme="github-light"
+                          crossOrigin="anonymous"
+                          async>
+                  <\/script>
+
                 </div>
               `)}
           </div>
