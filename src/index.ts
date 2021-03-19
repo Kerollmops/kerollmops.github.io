@@ -1,4 +1,14 @@
-import { ConfigurationComponent } from './configuration-component';
+import { PostsList } from './posts-list';
 
-document.querySelector('h2#configuration')!
-  .insertAdjacentElement('afterend', new ConfigurationComponent().element);
+// const list = await PostsList().element;
+
+// document.querySelector('div#posts-list')!
+//   .replaceWith(list);
+
+const foo = async () => {
+  const list = await new PostsList().element;
+  document.querySelector('div#posts-list')!
+      .replaceWith(list);
+};
+
+foo()

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>utterances</title>
+    <title>Kero's blog</title>
     <meta name="description" content="A lightweight commenting system using GitHub issues.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +45,35 @@
   <body>
     <main class="timeline">
       <article class="timeline-comment">
+        <a class="avatar" href="https://github.com/Kerollmops" tabindex="-1">
+          <img alt="@Kerollmops" height="44" width="44"
+              src="https://github.com/Kerollmops.png?size=88">
+        </a>
+        <div class="comment">
+          <header class="comment-header">
+            <span class="comment-meta">
+              <a class="text-link" href="https://github.com/Kerollmops">
+                <strong>Kerollmops</strong>
+              </a>
+            </span>
+          </header>
+          <article class="markdown-body" md>
+            <include src="./README.md"></include>
+          </article>
+        </div>
+      </article>
+    </main>
+
+    <main class="timeline">
+      <article class="timeline-posts-list">
+        <div id="posts-list"></div>
+      </article>
+    </main>
+
+    <script src="./index.ts"></script>
+
+    <!-- <main class="timeline">
+      <article class="timeline-comment">
         <a class="avatar" href="https://github.com/utterance" tabindex="-1">
           <img alt="@utterances" height="44" width="44"
               src="https://avatars3.githubusercontent.com/u/27908738?v=3&s=88">
@@ -64,36 +93,12 @@
       </article>
     </main>
 
-    <script src="./index.ts"></script>
-
-    <if condition="NODE_ENV === 'production'">
-      <script src="https://utteranc.es/client.js"
-              repo="utterance/utterances"
-              issue-term="homepage"
-              crossorigin="anonymous"
-              theme="github-light"
-              async>
-      </script>
-    </if>
-    <else>
-      <script src="http://localhost:4000/client.js"
-              repo="jdanyow/utterances-demo"
-              issue-term="pathname"
-              label="💬 comment"
-              crossorigin="anonymous"
-              theme="github-light"
-              async>
-      </script>
-    </else>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-59973368-11', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <script src="https://utteranc.es/client.js"
+            repo="utterance/utterances"
+            issue-term="homepage"
+            crossorigin="anonymous"
+            theme="github-light"
+            async>
+    </script> -->
   </body>
 </html>

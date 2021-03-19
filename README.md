@@ -1,4 +1,10 @@
-# utterances 🔮
+# 🌌 Kero's blog
+
+Welcome to my blog, I hope there will be a lot of mostly technical posts in here.
+
+TODO add a list of interesting projects I worked on below!
+
+## The following message is form the original Utterances project.
 
 A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
 
@@ -15,8 +21,6 @@ When Utterances loads, the GitHub [issue search API](https://developer.github.co
 
 To comment, users must authorize the utterances app to post on their behalf using the GitHub [OAuth flow](https://developer.github.com/v3/oauth/#web-application-flow). Alternatively, users can comment on the GitHub issue directly.
 
-## configuration
-
 ## sites using utterances
 
 * Haxe [documentation](https://haxe.org/manual) and [cookbook](https://code.haxe.org/)
@@ -25,5 +29,3 @@ To comment, users must authorize the utterances app to post on their behalf usin
 * **[and many more...](https://github.com/utterance/utterances/blob/master/SITES.md#sites-using-utterances)**
 
 Are you using utterances? [Add your site](https://github.com/utterance/utterances/edit/master/SITES.md) to the list!
-
-# try it out 👇👇👇

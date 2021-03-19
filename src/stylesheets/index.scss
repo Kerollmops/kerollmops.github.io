@@ -1,13 +1,17 @@
 @import "@primer/css/base/index";
+@import "@primer/css/timeline";
+@import "@primer/css/utilities/typography";
+@import "@primer/css/utilities/colors";
 @import "@primer/css/buttons/button";
 @import "@primer/css/forms/form-control";
-@import "@primer/css/forms/form-select";
 @import "@primer/css/forms/form-group";
+@import "@primer/css/forms/form-select";
 @import "@primer/css/forms/input-group";
 @import "@primer/css/markdown/index";
 @import "./util";
 @import "./timeline";
 @import "./timeline-comment";
+@import "./timeline-posts-list";
 
 .timeline {
   width: 100%;
